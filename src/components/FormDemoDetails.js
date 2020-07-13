@@ -20,7 +20,7 @@ export class FormPersonalDetails extends Component {
         const { values , handleChange } = this.props;
         return (
             <MuiThemeProvider>
-                <React.Fragment>
+                <React.Fragment> // when you don't need to show an element in the DOM, use a React.Fragment instead of a div . It's like a ghost element (Doesn't show in the DOM) but you need it to wrap elements.
                     <AppBar title="Enter Pet's Demographic Details" />
                     <TextField
                     hintText = "Female or Male"
