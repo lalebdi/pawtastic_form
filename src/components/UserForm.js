@@ -34,7 +34,7 @@ export class UserForm extends Component {
 
     // Handle fields change
     handleChange = input => e => {
-        this.setState({[input]: e.target.value})
+        this.setState({[input]: e.target.value}) // used the [] around the name to avoid repetition for the input. the input will be assigned to the corresponding values.
     };
 
     render() {
